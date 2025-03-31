@@ -23,35 +23,40 @@ By structuring the data this way, the database **enables efficient real-time tra
 
 **For each ride, what is the corresponding user's first name, ride start time, and ride end time?**
 
-```SELECT R.RideID, U.FName, R.StartTime, R.EndTime FROM Ride R Inner join [User] U  ON R.UserID = U.UserID;
+`SELECT R.RideID, U.FName, R.StartTime, R.EndTime FROM Ride R Inner join [User] U  ON R.UserID = U.UserID;`
 
-###Query 2
+### Query 2
 
 **What is the total revenue from completed payments?**
 
-```SELECT SUM(FareAmount) AS TotalRevenue FROM Payment WHERE Status = 'Completed' ;
+`SELECT SUM(FareAmount) AS TotalRevenue FROM Payment WHERE Status = 'Completed' ;`
 
 ### Query 3
 
 **What is the average from rides?**
 
-```SELECT AVG (Fare) AS AverageFare FROM Ride;
+`SELECT AVG (Fare) AS AverageFare FROM Ride;`
 
 ### Query 4
 
 **What are the first names, last names, vehicle makes, models, and license plates of all drivers and their associated vehicles?**
 
-```SELECT U.FName, U.LName, V.Make, V.Model, V.LicencePlate
+```
+SELECT U.FName, U.LName, V.Make, V.Model, V.LicencePlate
 FROM [User] U
 JOIN Ride R ON U.UserID = R.UserID
 JOIN Vehicle V ON R.VehicleID = V.VehicleID
 WHERE U.Role = 'Driver';
+```
 
 ### Query 5
 
 **How many rides has each user taken, including users who haven't taken any rides?**
 
-```SELECT U.FName, U.LName, COUNT(R.RideID) AS TotalRides
+```
+SELECT U.FName, U.LName, COUNT(R.RideID) AS TotalRides
 FROM [User] U
 LEFT JOIN Ride R ON U.UserID = R.UserID
 GROUP BY U.FName, U.LName;
+```
+---
