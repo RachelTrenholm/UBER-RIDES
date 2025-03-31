@@ -9,8 +9,10 @@ By structuring the data this way, the database **enables efficient real-time tra
 
 ## Entity Relational Model
 ![ER Model](https://github.com/user-attachments/assets/30139c31-02bc-4b3a-9021-d5de3c3e45f0)
+
 ## Relational Model
 <img width="898" alt="REL MODEL  NEW" src="https://github.com/user-attachments/assets/695f1e22-5930-4240-ad95-91e5da0e9f92" />
+
 ## Source Code
-+ [Create Script]()
++ [Create Script](https://github.com/RachelTrenholm/UBER-RIDES/commit/85afed0ce60752143e9b845464636e5bc3b61239)
 + [Populate Script](https://github.com/RachelTrenholm/UBER-RIDES/commit/9d601b11af6593b325d3ca1d04ef912b767bae88)
