@@ -12,3 +12,5 @@ By structuring the data this way, the database **enables efficient real-time tra
 ## Relational Model
 <img width="898" alt="REL MODEL  NEW" src="https://github.com/user-attachments/assets/695f1e22-5930-4240-ad95-91e5da0e9f92" />
 ## Source Code
++ [Create Script]()
++ [Populate Script]()
