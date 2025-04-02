@@ -23,19 +23,25 @@ By structuring the data this way, the database **enables efficient real-time tra
 
 **For each ride, what is the corresponding user's first name, ride start time, and ride end time?**
 
-`SELECT R.RideID, U.FName, R.StartTime, R.EndTime FROM Ride R Inner join [User] U  ON R.UserID = U.UserID;`
+```
+SELECT R.RideID, U.FName, R.StartTime, R.EndTime FROM Ride R Inner join [User] U  ON R.UserID = U.UserID;
+```
 
 ### Query 2
 
 **What is the total revenue from completed payments?**
 
-`SELECT SUM(FareAmount) AS TotalRevenue FROM Payment WHERE Status = 'Completed' ;`
+```
+SELECT SUM(FareAmount) AS TotalRevenue FROM Payment WHERE Status = 'Completed' ;
+```
 
 ### Query 3
 
 **What is the average from rides?**
 
-`SELECT AVG (Fare) AS AverageFare FROM Ride;`
+```
+SELECT AVG (Fare) AS AverageFare FROM Ride;
+```
 
 ### Query 4
 
